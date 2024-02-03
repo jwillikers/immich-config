@@ -2,7 +2,7 @@
   "ffmpeg": {
     "crf": 39,
     "threads": 0,
-    "preset": "medium",
+    "preset": "slow",
     "targetVideoCodec": "vp9",
     "acceptedVideoCodecs": [
       "vp9"
