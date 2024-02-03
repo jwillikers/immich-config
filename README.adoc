@@ -1,0 +1,56 @@
+= Immich Config
+Jordan Williams <jordan@jwillikers.com>
+:experimental:
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:Immich: https://immich.app/[Immich]
+
+Configuration for my {Immich} server.
+
+These are configuration files for my Immich server, which is run via several containers.
+See my https://github.com/jwillikers/home-lab-helm[Home Lab Helm] repository for the pod's configuration.
+
+== Usage
+
+The configuration for Immich is stored in the `immich.config.json` file.
+The Home Lab Helm Kubernetes configuration expects this repository to be in a specific location, `~/Projects/immich-config`, which is mounted in the container.
+Follow these instructions to put the configuration file in the expected location.
+
+. Create the `~/Projects` directory.
++
+[,sh]
+----
+mkdir ~/Projects
+----
+
+. Clone this repository under the `~/Projects` directory.
++
+[,sh]
+----
+git -C ~/Projects clone https://github.com/jwillikers/immich-config.git
+----
+
+== References
+
+.Documentation
+* https://immich.app/docs/install/config-file[Immich Config File]
+
+== Code of Conduct
+
+The project's Code of Conduct is available in the link:CODE_OF_CONDUCT.adoc[] file.
+
+== License
+
+This project is licensed under the https://creativecommons.org/licenses/by-sa/4.0/legalcode[Creative Commons Attribution-ShareAlike 4.0 International License].
+
+© 2024 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]
