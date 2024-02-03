@@ -3,8 +3,14 @@
     "crf": 23,
     "threads": 0,
     "preset": "ultrafast",
-    "targetVideoCodec": "h264",
-    "targetAudioCodec": "aac",
+    "targetVideoCodec": "vp9",
+    "acceptedVideoCodecs": [
+      "vp9"
+    ],
+    "targetAudioCodec": "libopus",
+    "acceptedAudioCodecs": [
+      "libopus"
+    ],
     "targetResolution": "720",
     "maxBitrate": "0",
     "bframes": -1,
@@ -13,10 +19,11 @@
     "npl": 0,
     "temporalAQ": false,
     "cqMode": "auto",
-    "twoPass": false,
+    "twoPass": true,
+    "preferredHwDevice": "auto",
     "transcode": "required",
     "tonemap": "hable",
-    "accel": "disabled"
+    "accel": "qsv"
   },
   "job": {
     "backgroundTask": {
@@ -28,7 +35,7 @@
     "metadataExtraction": {
       "concurrency": 5
     },
-    "recognizeFaces": {
+    "faceDetection": {
       "concurrency": 2
     },
     "search": {
@@ -38,9 +45,6 @@
       "concurrency": 5
     },
     "library": {
-      "concurrency": 5
-    },
-    "storageTemplateMigration": {
       "concurrency": 5
     },
     "migration": {
@@ -97,6 +101,8 @@
     "enabled": true
   },
   "storageTemplate": {
+    "enabled": false,
+    "hashVerificationEnabled": true,
     "template": "{{y}}/{{y}}-{{MM}}-{{dd}}/{{filename}}"
   },
   "thumbnail": {
@@ -125,5 +131,9 @@
       "usePolling": false,
       "interval": 10000
     }
+  },
+  "server": {
+    "externalDomain": "",
+    "loginPageMessage": ""
   }
 }
