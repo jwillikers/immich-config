@@ -1,8 +1,8 @@
 {
   "ffmpeg": {
-    "crf": 23,
+    "crf": 39,
     "threads": 0,
-    "preset": "ultrafast",
+    "preset": "medium",
     "targetVideoCodec": "vp9",
     "acceptedVideoCodecs": [
       "vp9"
@@ -63,7 +63,7 @@
   },
   "machineLearning": {
     "enabled": true,
-    "url": "http://immich-machine-learning:3003",
+    "url": "http://localhost:3003",
     "clip": {
       "enabled": true,
       "modelName": "ViT-B-32__openai"
