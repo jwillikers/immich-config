@@ -18,7 +18,7 @@
     "gopSize": 0,
     "npl": 0,
     "temporalAQ": false,
-    "cqMode": "auto",
+    "cqMode": "cqp",
     "twoPass": true,
     "preferredHwDevice": "auto",
     "transcode": "required",
