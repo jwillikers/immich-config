@@ -54,7 +54,7 @@
       "concurrency": 5
     },
     "videoConversion": {
-      "concurrency": 4
+      "concurrency": 10
     }
   },
   "logging": {
