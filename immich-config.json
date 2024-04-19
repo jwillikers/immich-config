@@ -3,9 +3,9 @@
     "crf": 39,
     "threads": 0,
     "preset": "slow",
-    "targetVideoCodec": "vp9",
+    "targetVideoCodec": "av1",
     "acceptedVideoCodecs": [
-      "vp9"
+      "av1"
     ],
     "targetAudioCodec": "libopus",
     "acceptedAudioCodecs": [
@@ -85,17 +85,20 @@
     "enabled": true
   },
   "oauth": {
-    "enabled": false,
-    "issuerUrl": "",
+    "autoLaunch": false,
+    "autoRegister": true,
+    "buttonText": "Login with OAuth",
     "clientId": "",
     "clientSecret": "",
+    "defaultStorageQuota": 0,
+    "enabled": false,
+    "issuerUrl": "",
     "mobileOverrideEnabled": false,
     "mobileRedirectUri": "",
     "scope": "openid email profile",
+    "signingAlgorithm": "RS256",
     "storageLabelClaim": "preferred_username",
-    "buttonText": "Login with OAuth",
-    "autoRegister": true,
-    "autoLaunch": false
+    "storageQuotaClaim": "immich_quota"
   },
   "passwordLogin": {
     "enabled": true
@@ -105,11 +108,14 @@
     "hashVerificationEnabled": true,
     "template": "{{y}}/{{y}}-{{MM}}-{{dd}}/{{filename}}"
   },
-  "thumbnail": {
-    "webpSize": 250,
-    "jpegSize": 1440,
+  "image": {
+    "thumbnailFormat": "webp",
+    "thumbnailSize": 250,
+    "previewFormat": "jpeg",
+    "previewSize": 1440,
     "quality": 80,
-    "colorspace": "p3"
+    "colorspace": "p3",
+    "extractEmbedded": false
   },
   "newVersionCheck": {
     "enabled": true
@@ -127,13 +133,14 @@
       "cronExpression": "0 0 * * *"
     },
     "watch": {
-      "enabled": false,
-      "usePolling": false,
-      "interval": 10000
+      "enabled": false
     }
   },
   "server": {
     "externalDomain": "",
     "loginPageMessage": ""
+  },
+  "user": {
+    "deleteDelay": 7
   }
 }
