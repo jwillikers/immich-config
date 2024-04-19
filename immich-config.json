@@ -1,11 +1,11 @@
 {
   "ffmpeg": {
-    "crf": 39,
+    "crf": 35,
     "threads": 0,
     "preset": "slow",
-    "targetVideoCodec": "vp9",
+    "targetVideoCodec": "av1",
     "acceptedVideoCodecs": [
-      "vp9"
+      "av1"
     ],
     "targetAudioCodec": "libopus",
     "acceptedAudioCodecs": [
@@ -18,12 +18,12 @@
     "gopSize": 0,
     "npl": 0,
     "temporalAQ": false,
-    "cqMode": "cqp",
-    "twoPass": true,
+    "cqMode": "auto",
+    "twoPass": false,
     "preferredHwDevice": "auto",
     "transcode": "required",
     "tonemap": "hable",
-    "accel": "qsv"
+    "accel": "disabled"
   },
   "job": {
     "backgroundTask": {
