@@ -3,9 +3,9 @@
     "crf": 39,
     "threads": 0,
     "preset": "slow",
-    "targetVideoCodec": "av1",
+    "targetVideoCodec": "vp9",
     "acceptedVideoCodecs": [
-      "av1"
+      "vp9"
     ],
     "targetAudioCodec": "libopus",
     "acceptedAudioCodecs": [
