@@ -33,7 +33,7 @@ mkdir ~/Projects
 +
 [,sh]
 ----
-git -C ~/Projects clone https://github.com/jwillikers/immich-config.git
+git -C ~/Projects clone https://codeberg.org/jwillikers/immich-config.git
 ----
 
 == References
